@@ -52,7 +52,7 @@ function afficherCompteAReboursOuvres() {
     }
 
         document.getElementById('compte-a-rebours-ouvres-pour-enfants').textContent =
-        `Temps restant avant que l'année scolaire soit finie ${joursOuvres} jours d'école avant le 20 juin 2025.`;
+        `Temps restant avant que l'année scolaire soit finie : ${joursOuvres} jours d'école avant le 20 juin 2025.`;
 }
 
 
