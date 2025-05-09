@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f4f8, #dff3f9);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-top: 30px;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.image-container {
+    margin: 30px 0;
+}
+
+img {
+    width: 120px;
+    height: auto;
+    animation: fadeIn 1s ease-out;
+}
+
+p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+#date-du-jour {
+    color: #555;
+    font-style: italic;
+    font-size: 18px;
+}
+
+#compte-a-rebours {
+    font-size: 28px;
+    color: #e74c3c;
+    background: #fdecea;
+    border-left: 5px solid #e74c3c;
+    padding: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 10px;
+    animation: pulse 2s infinite;
+}
+
+#compte-a-rebours-ouvres-pour-enfants {
+    font-size: 24px;
+    color: #2ecc71;
+    background: #e9f9ef;
+    border-left: 5px solid #2ecc71;
+    padding: 15px;
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+/* Footer styling */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    font-size: 14px;
+}
+
+.footer-link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 10px rgba(231, 76, 60, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(231, 76, 60, 0.6); }
+}
